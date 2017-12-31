@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="16dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_fallback" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/banner_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/banner_image"
+            android:layout_alignRight="@id/banner_image"
+            android:layout_margin="8dp"
+            android:text="1/10"
+            android:gravity="center"
+            android:textAppearance="@style/Banner.number"
+            android:background="@drawable/background_dark_circle"
+            />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_alignBottom="@id/banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie title"
+            android:padding="8dp"
+            android:textAppearance="@style/Banner.Title"
+            android:background="@drawable/rounded_corners" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
