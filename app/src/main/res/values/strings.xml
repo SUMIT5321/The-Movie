@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">The Movie</string>
 
-    <string name="api_key">9ba053887290dd9fb2fbf54ec1e40766</string>
+    <string name="api_key">your_api_key</string>
 </resources>
